@@ -1,0 +1,139 @@
+html, body{
+    margin:0;
+    padding:0;
+}
+body{
+    width:auto;
+    height:335px;
+    font-family:'Arial', sans-serif;
+    font-size:10px;
+    color:white;
+}
+.header {
+    background-color: #f0f0f0;
+    min-height: 300px
+}
+.head {
+    background-color: #34495e;
+    width:auto;
+    height:40px;
+}
+.serch {
+  position: absolute;
+  margin-left: 28%;
+  margin-top: 8px;
+  padding: none;
+
+}
+.serch-line{margin-top: 5px}
+ .serch-line input {
+  background-color: #34495e;
+  border: none;
+
+}
+.technomart {
+   width: 150px;
+   margin-left:15%;
+   padding: 8px 20px;
+   text-align: center;
+   text-transform: uppercase;
+   color: white;
+   background: #e74c3c;
+   position:absolute;
+   font-size: 20px
+}
+.technomart1 {
+  box-shadow: 0 5px #b72f38;
+}
+.pre {
+  width:260px;
+  padding-top: 30px;
+  margin-left:15%;
+  text-align: left;
+  line-height: 22px;
+  color:red;
+  font-size: 16px;
+  font-style: italic;
+
+}
+ul.preheader-menue li a{
+color:white;
+text-decoration: none;}
+ul.preheader-menue  {
+  position: absolute;
+  margin-left: 47%;
+  padding: 4px;
+  color:#fc0;
+
+}
+ul.preheader-menue li {
+display: inline;
+margin-right: 25px;
+padding: 3px;
+font-size: 16px;
+
+}
+
+.call-numb {
+top:70px;
+left:30%;
+margin-left: 100px;
+padding: 10px 40px 10px 40px;
+position: absolute;
+text-align: center;;
+width:250px;
+color: red;
+font-size: 22px;
+border:3px solid white;
+}
+.number {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.icon {
+    width: 22px;
+    height: 22px;
+    background: url("../img/icons.png") no-repeat 0 0;
+}
+.icon.icon-phone {
+    position: absolute;
+    margin-left:-35px;
+    background-position:  -118px 3px;
+}
+.icon.icon-q {
+  position: absolute;
+  margin-left:-25px;
+  background-position:  0px 3px;
+}
+.icon.icon-about {
+  position: absolute;
+  margin-left:-60px;
+  background-position:  0px 3px;
+
+}
+.contact {
+top:120px;
+left:30%;
+margin-left: 105px;
+position: absolute;
+text-align: center;;
+width:250px;
+color: #34495e;
+font-size: 12px;
+}
+ul.row-head li{
+  display: inline;
+  margin-right: 45px;
+  padding: 3px;
+  font-size: 16px;
+}
+ul.row-head li a{
+color:white;
+text-decoration: none;}
+.row-header {
+  margin-left: 280px;
+  margin-top: 50px;
+  padding: 5px 10px 5px 10px;
+  width: 950px;
+  background-color: #34495e
+}
