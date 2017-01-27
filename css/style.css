@@ -16,3 +16,28 @@ body{
   display: inline;
   margin-left: 60px;
   font-size: 17px;}
+.banner_1 {
+   width:300px;
+   height:123px;
+  background-color:#f6b22d;
+}
+.banner_2 {
+   width:300px;
+   height:123px;
+  background-color:#4aafde;
+}
+.banner_3 {
+   width:300px;
+   height:123px;
+  background-color:#cc79d1;
+}
+.banner_4 {
+   width:300px;
+   height:123px;
+  background-color:#85d179;
+}
+.banner_5 {
+   width:300px;
+   height:123px;
+  background-color:#f6b22d;
+}
