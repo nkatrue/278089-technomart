@@ -3,26 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-<link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
       <div class="container">
-        <a href="index.html">ТЕХНОМАРТ</a>
         <nav class="top-bar">
-          <div class="serch-line">
-            <input placeholder="Поиск:">
-          </div>
           <div class="bookmarks-basket">
-            <div class="bookmarks">
-              <a href="#">Закладки</a>
-              (<span id="bookmarks-quantity">0</span>)
+            <div class="logo item">
+              <a href="index.html">ТЕХНОМАРТ</a>
             </div>
-            <div class="basket">
-              <a href="#">Корзина</a>
-              (<span id="basket-quantity">0</span>)
+            <div class="serch-line item">
+              <input  class="text-input" placeholder="Поиск:">
             </div>
-            <a id="checkoutButton" class="checkout" href="/checkout/" rel="nofollow">Оформить заказ</a>
+              <div class="bookmarks item">
+                <a href="#">Закладки</a>
+                (<span id="bookmarks-quantity">0</span>)
+              </div>
+              <div class="bookmarks item">
+                <a href="#">Корзина</a>
+                (<span id="basket-quantity">0</span>)
+              </div>
+              <div class="bookmarks item">
+                <a id="checkoutButton" class="checkout" href="/checkout/" rel="nofollow">Оформить заказ</a>
+              </div>
           </div>
         </nav>
       </div>
@@ -34,8 +38,11 @@
           </div>
           <p class="location">г. Санкт-Петербург, ул. Б. Конюшенная, д. </p>
         </div>
-          <a id="loginButton" class="login" href="/login/" rel="nofollow">Войти</a>
-          <a id="regisButton" class="registration" href="/registration/" rel="nofollow">Регистрация</a>
+        <div class="for-user">
+          <a id="loginButton" class="user" href="/login/" rel="nofollow">
+            <span class="icon"></span>Войти</a>
+          <a id="regisButton" class="user" href="/registration/" rel="nofollow">Регистрация</a>
+        </div>
       </div>
       <nav class="navigation">
         <ul>
@@ -54,23 +61,26 @@
       <section class="promo">
           <div class="row">
             <div class="banner_1">
+              <img src="" width="300px" height="123px" alt="">
               <div class="new"></div>
               <div>Материалы</div>
               <a href="#">На любой вкус</a>
             </div>
             <div class="banner_2">
+              <img src="" width="300px" height="123px" alt="">
               <div>Инструменты</div>
               <a href="#">На все случаи</a>
             </div>
             <div class="banner_3">
+              <img src="" width="300px" height="123px" alt="">
               <div>Техника</div>
               <a href="#">Для стройки</a>
             </div>
           </div>
-          <div class="row">
+          <div class="row2">
             <div class="slider">
               <div class="slide-item">
-                <img src="img/slider_1.png" width="620px" height="266px" alt="">
+                <img src="http://placehold.it/620x266" width="620px" height="266px" alt="">
                 <p class="title"><span class="big-text">перфораторы</span><br> настоящие мужские игрушки</p>
                 <a href="" class="button">Открыть каталог</a>
               </div>
@@ -80,10 +90,12 @@
               </div>
             </div>
             <div class="banner_4">
+              <img src="" width="300px" height="123px" alt="">
               <div>Скидки 50%</div>
               <a href="#">на 350 товаров</a>
             </div>
             <div class="banner_5">
+              <img src="" width="300px" height="123px" alt="">
               <div>Доставка</div>
               <a href="#">Бесплатно</a>
             </div>
@@ -188,28 +200,33 @@
       </div>
     </section>
     <section class="service">
-      <h2 class="h2">Сервисы</h2>
-      <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
-        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+      <div class="container-service">
+        <h2>Сервисы</h2>
+        <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <div class="delivery-guarantee-credit">
           <ul class="lead-delivery">
-          <li>Доставка</li>
-          <li>Гарантия</li>
-          <li>Кредит</li>
-        </ul>
-        <div class="delivery">
-          <h2 class="h2">Доставка</h2>
-          <p>Мы с удовольствием доставим ваш товар прямо<br>
-            к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>
-            поднимая его на ваш этаж!</p>
-        </div>
-        <div class="car">
-          <svg height="148px" width="207px">
-            <!--<rect class="box" width="133" height="100" fill="blue"/>
-            <rect class="line" width="133" height="4" ry="-104" fill="gray"/>
-            <rect class="bottom-car" width="145" height="18" ry="-104" fill="dimgray"/>
-            <rect class="head-car" width="60" height="88" ry="-104" fill="gray"/> -->
-          </svg>
-        </div>
+            <li>Доставка</li>
+            <li>Гарантия</li>
+            <li>Кредит</li>
+          </ul>
+
+          <div class="delivery">
+            <h2>Доставка</h2>
+            <p>Мы с удовольствием доставим ваш товар прямо<br>
+              к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>
+              поднимая его на ваш этаж!</p>
+          </div>
+          <div class="car">
+            <svg height="148px" width="207px">
+              <!--<rect class="box" width="133" height="100" fill="blue"/>
+              <rect class="line" width="133" height="4" ry="-104" fill="gray"/>
+              <rect class="bottom-car" width="145" height="18" ry="-104" fill="dimgray"/>
+              <rect class="head-car" width="60" height="88" ry="-104" fill="gray"/> -->
+            </svg>
+          </div>
+         </div>
+      </div>
     </section>
     <section class="about">
       <div class="about-company">
@@ -227,7 +244,7 @@
           <a id="aboutButton" class="about" href="/about/" rel="nofollow">Подробнее о компании</a>
         </div>
         <div class="right-content">
-          <h2 class="h2">Контакты</h2>
+          <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, <br>заехав в наш офис:<p>
           <div class="map-page">
             <a href="#">
