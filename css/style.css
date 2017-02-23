@@ -1573,7 +1573,8 @@ form.modal .button {
 
 /*** Подвал ****/
 footer {
-		background-color: #25405d
+		background-color: #25405d;
+		overflow: hidden;
 }
 footer > .container {
 		padding-bottom: 33px;
