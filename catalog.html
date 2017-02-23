@@ -3,11 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link type="text/css" rel="stylesheet" href="css/normalize.css">
-    <link type="text/css" rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="css/normalize.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="bg-grey-light">
@@ -95,47 +94,58 @@
             </div>
             <div class="filter">
               <div class="header">Фильтр:</div>
-              <form action="#" mehod="get" name="shop-form">
+              <form action="#" method="get" name="shop-form">
                 <h5>ЦЕНА:</h5>
                 <div class="price-slider">
                   <div class="price-line">
-                      <a class="price-min" href="#"></a>
-                      <a class="price-max" href="#"></a>
+                    <div class="price-line-up"></div>
+                    <a class="price-min" href="#"></a>
+                    <a class="price-max" href="#"></a>
                   </div>
                 </div>
                 <div class="price-range">
-                  <input class="from">
+                  <input class="from" value="0">
                   <div class="range-symbol">&mdash;</div>
-                  <input class="to">
+                  <input class="to" value="30000">
                   <div class="clearfix"></div>
                 </div>
 
                 <hr class="hr-line">
-                <div class="producers">
+                <div class="form-block">
                   <h5>Производители:</h5>
-                  <input type="checkbox" name="bosch" id="bosch" checked >
-                  <label for="bosch">Bosch</label>
-                  <br>
-                  <input type="checkbox" name="interskol" id="interskol" >
-                  <label for="interskol">Интерскол</label>
-                  <br>
-                  <input type="checkbox" name="makita" id="makita" checked >
-                  <label for="makita">Makita</label>
-                  <br>
-                  <input type="checkbox" name="dewalt" id="dewalt" >
-                  <label for="dewalt">Dewalt</label>
-                  <br>
-                  <input type="checkbox" name="hitachi" id="hitachi">
-                  <label for="hitachi">Hitachi</label>
+                  <div>
+                      <input type="checkbox" name="bosch" id="bosch" checked >
+                      <input type="checkbox" name="bosch" id="bosch" checked disabled="disabled">
+                      <label for="bosch">Bosch</label>
+                  </div>
+                  <div>
+                      <input type="checkbox" name="interskol" id="interskol" >
+                      <label for="interskol">Интерскол</label>
+                  </div>
+                  <div>
+                      <input type="checkbox" name="makita" id="makita" checked >
+                      <label for="makita">Makita</label>
+                  </div>
+                  <div>
+                      <input type="checkbox" name="dewalt" id="dewalt" >
+                      <label for="dewalt">Dewalt</label>
+                  </div>
+                  <div>
+                      <input type="checkbox" name="hitachi" id="hitachi">
+                      <label for="hitachi">Hitachi</label>
+                  </div>
                 </div>
-                <div class="item-shop">
+                <div class="form-block">
                   <hr class="hr-line">
                   <h5>Питание:</h5>
-                  <input type="radio" name="battery-net" id="battery" checked>
-                  <label for="battery">Аккумуляторные</label>
-                  <br>
-                  <input type="radio" name="battery-net" id="network">
-                  <label for="network">Сетевые</label>
+                  <div class="radio">
+                      <input type="radio" name="battery-net" id="battery" checked>
+                      <label for="battery">Аккумуляторные</label>
+                  </div>
+                  <div class="radio">
+                      <input type="radio" name="battery-net" id="network">
+                      <label for="network">Сетевые</label>
+                  </div>
                 </div>
                 <div class="show">
                   <a href="#">Показать</a>
@@ -143,7 +153,7 @@
               </form>
             </div>
             <div class="products">
-              <!--<form  class="modal" name="test" method="post">
+              <form  class="modal" name="test" method="post">
                 <div class="red-line"></div>
                 <div class="ok"></div>
                 <a href=""class="cross"></a>
@@ -151,14 +161,14 @@
                 <p>Товар добавлен в корзину!</p>
                 <a href="" class="red bord">Оформить заказ</a>
                 <a href="" class="white bord">Продолжить покупку</a>
-              </form>-->
+              </form>
               <div class="header">Сортировка:</div>
               <div class="arrow-icon up"></div>
               <div class="arrow-icon down"></div>
                 <ul class="by">
-                  <li><a class="sort-option" href="#">ПО ЦЕНЕ</a></li>
-                  <li><a class="sort-option" href="#">ПО ТИПУ</a></li>
-                  <li><a class="sort-option" href="#">ПО ФУНКЦИАНАЛУ</a></li>
+                  <li><a class="active" href="#">ПО ЦЕНЕ</a></li>
+                  <li><a  href="#">ПО ТИПУ</a></li>
+                  <li><a  href="#">ПО ФУНКЦИАНАЛУ</a></li>
                 </ul>
               <div class="product-item">
                 <div class="hidden-buttons">
@@ -193,13 +203,14 @@
                 </div>
               </div>
               <div class="product-item">
-                <div class="new"></div>
+
                 <div class="hidden-buttons">
                   <a class="to-basket" href="#">
                       <span class="icons icon-basket"></span> КУПИТЬ
                   </a>
                   <a class="to-bookmarks" href="#">В ЗАКЛАДКИ</a>
                 </div>
+                <div class="new"></div>
                 <img src="./img/perforator_2.png"  alt="">
                 <div class="about-product">
                   <a class="title" href="#">Перфоратор BOSCH<br>BFG 2000</a>
@@ -226,13 +237,13 @@
                 </div>
               </div>
               <div class="product-item">
-                <div class="new"></div>
                 <div class="hidden-buttons">
                   <a class="to-basket" href="#">
                       <span class="icons icon-basket"></span> КУПИТЬ
                   </a>
                   <a class="to-bookmarks" href="#">В ЗАКЛАДКИ</a>
                 </div>
+                <div class="new"></div>
                 <img src="./img/perforator_3.png" alt="">
                 <div class="about-product">
                   <a class="title" href="#">Перфоратор BOSCH<br>BFG 6000</a>
@@ -259,13 +270,13 @@
                 </div>
               </div>
               <div class="product-item">
-                <div class="new"></div>
                 <div class="hidden-buttons">
                   <a class="to-basket" href="#">
                       <span class="icons icon-basket"></span> КУПИТЬ
                   </a>
                   <a class="to-bookmarks" href="#">В ЗАКЛАДКИ</a>
                 </div>
+                <div class="new"></div>
                 <img src="./img/perforator_2.png" alt="">
                 <div class="about-product">
                   <a class="title" href="#">Перфоратор BOSCH<br>BFG 3000</a>
